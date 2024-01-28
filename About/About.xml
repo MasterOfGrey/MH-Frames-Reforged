@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>MH Frames Reforged</name>
+    <description>[img]https://i.imgur.com/7xuCZqW.png[/img]
+[h1]Submod for Mechanical Humanlikes: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2974536022]Android Tiers Core[/url][/h1]
+Designed for Rimworld 1.4
+Mod Version V1.2
+Please consider rating this if you like it! It really helps out. [img]https://i.imgur.com/tE28cZ7.gif[/img]
+
+[table]
+    [tr]
+        [td][img]https://i.imgur.com/WjDSfUn.png[/img][/td]
+        [td][img]https://i.imgur.com/Be8E2qJ.png[/img][/td]
+    [/tr]
+[/table]
+*Make sure there are no existing jobs, hediffs, or frames and (as always) employ [url=https://steamcommunity.com/workshop/filedetails/?id=2921585989]Mid-saver Saver[/url] to remove in the safest way possible.
+
+[img]https://i.imgur.com/6o9HyTD.png[/img]
+This mod reworks a few existing frames for engineering consistency, tweaks the tech tree and unlock points, and adds a variety of extras.
+
+Also includes code to ensure that the carrying capacity improvements from framework upgrades are applied to weight limits for all purposes including caravans.
+
+[img]https://i.imgur.com/Wh5EspM.png[/img]
+[b]Altered Frames:[/b]
+- Hydraulic (fixed carrying capacity bonus due to limitations of hydraulic actuators)
+- Refined (increased pawn beauty and flat social impact buff from looking nice)
+- Mobility (fixed movement speed bonus, again due to actual actuator functioning)
+
+[b]Added Frames:[/b]
+- Alignment Frame (hauling frame ideal for trainable mechanical animals)
+- Thermal Pumped Frame (combat oriented upgrade to the Guardian Frame)
+- Martial Frame (combat durability enhanced upgrade to the Mobility Frame)
+- Advanced Alignment Frame (improved from above but spacer tech and much more expensive)
+- Advanced Hydraulic Frame (as above; same scope of improvements and tech/cost changes)
+- Noble Frame (more refined version of the Refined Frame with a focus on enhancing Nobility)
+
+I am happy to add other unique frames if people want them.
+
+[img]https://i.imgur.com/Qp8JBtZ.png[/img]
+[h1]Recommended:[/h1]
+[list]
+[*]Works best with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2944347505]ATR Industrial Automatons[/url]!
+[*]Works best with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2962634958]ATR MUFF Reforged[/url]!
+[/list]
+
+[h1]Compatibility:[/h1]
+[list]
+[*]No known incompatibilities.*
+[/list]
+
+[u]The following mods are special cases:[/u]
+*EdB Prepare Carefully eventually breaks all custom pawns; but that's their problem.
+*Combat Extended does their own compatibility patches; this is fine if they're patched for ATR.
+
+[img]https://i.imgur.com/lQRf9dG.png[/img]
+[b]Can this be patched to work with <insert mod>?[/b]
+[i]If you make a patch, I'll happily add it in. I may make patches if they're easy, but I won't be doing any messy patches myself though.[/i]
+
+[b]Will you add the other localisations for other languages?[/b]
+[i]As above, if you would like to provide a localisation, I'll happily add it in.[/i]
+
+[img]https://i.imgur.com/UN80Om5.png[/img]
+[h1]Language Translations[/h1]
+[list]
+[*]Russian language translation provided by Tkhakiro
+[/list]
+All translations are provided by the community in a voluntary capacity - I don't do them myself.
+Translations are not guaranteed to be up-to-date or to have errors fixed promptly.
+[h3]Want to submit a translation to your own language?[/h3]
+Go to the GitHub (linked below) and submit a pull request.
+
+[h1]Links[/h1]
+The Repo for this mod can be found here:
+[url=https://github.com/MasterOfGrey/ATR-Extra-Frames/tree/Legacy-ATR]GitHub[/url]
+I hang out in the discord for the main Android Tiers Reforged mod:
+[url=https://discord.gg/udNCpbkABT]Discord[/url]
+
+[h1]Creators[/h1]
+OG AT Peeps:
+* Atlas - The true original creator
+* ARandomKiwi - Creator of the wonderous and incredible AT++ content and maintainer
+
+ATR Team:
+* RWDevathon - The great balancer
+* FG_Remastered - PR overlord, diplomat, integral supporter
+* lazycooken - Jumpstarter and eager supporter
+* Winterbloom - Graphic and xml supporter
+</description>
+	<author>MasterOfGrey</author>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<packageId>MasterOfGrey.ExtraFramesMH</packageId>
+	<url>https://github.com/MasterOfGrey/ATR-Extra-Frames/releases/latest</url>
+	<modDependencies>
+        <li>
+            <packageId>Killathon.MechHumanlikes.AndroidTiersCore</packageId>
+            <displayName>MH: Android Tiers Core</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2917948202</steamWorkshopUrl>
+            <downloadUrl>https://github.com/RWDevathon/Android-Tiers-Reforged/releases/latest</downloadUrl>
+        </li>
+    </modDependencies>
+	<incompatibleWith>
+		<li>Atlas.AndroidTiers</li><!--Having them both active at the same time would be a little silly -->
+		<li>EdB.PrepareCarefully</li><!-- Hijacks generated/edited pawns at world start, breaks C# hediffs of edited pawns and who knows what else -->
+		<li>EdB.PrepareCarefully.UnofficialPatch</li><!-- Hijacks generated/edited pawns at world start, breaks C# hediffs of edited pawns and who knows what else -->
+		<li>EdB.PrepareCarefully.alonske.fork</li><!-- Hijacks generated/edited pawns at world start, breaks C# hediffs of edited pawns and who knows what else -->
+	</incompatibleWith>
+    <loadAfter>
+        <li>Killathon.MechHumanlikes.AndroidTiersCore</li><!-- Dependency -->
+		<li>MasterOfGrey.IndustrialAutomatonsMH</li><!-- Designed load order. -->
+		<li>MasterOfGrey.MUFFReforgedMH</li><!-- Designed load order. -->
+		<li>Ludeon.RimWorld</li><!-- Just making extra sure... -->
+		<li>Ludeon.RimWorld.Royalty</li><!-- Just making extra sure... -->
+		<li>Ludeon.RimWorld.Ideology</li><!-- Just making extra sure... -->
+		<li>Ludeon.RimWorld.Biotech</li><!-- Just making extra sure... -->
+    </loadAfter>
+</ModMetaData>

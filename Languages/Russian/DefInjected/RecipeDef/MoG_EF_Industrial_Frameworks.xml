@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Alignment -->
+
+  <ATR_Install_AlignmentFrame.label>Установить грузовой каркас</ATR_Install_AlignmentFrame.label>
+  <ATR_Install_AlignmentFrame.description>Замена каркаса этого агрегата на грузовой каркас, что значительно повысит полезность в качестве средства для транспортировки грузов.</ATR_Install_AlignmentFrame.description>
+
+
+  <!-- Advanced Hydraulic -->
+
+  <ATR_Install_AdvancedHydraulicFrame.label>Установить улучшенный гидравлический каркас</ATR_Install_AdvancedHydraulicFrame.label>
+  <ATR_Install_AdvancedHydraulicFrame.description>Замена каркаса этого агрегата на улучшенный гидравлический каркас, что значительно повысит грузоподъёмность, общую эффективность работы и уменьшит расход батареи.</ATR_Install_AdvancedHydraulicFrame.description>
+
+
+  <!-- Advanced Alignment -->
+
+  <ATR_Install_AdvancedAlignmentFrame.label>Установить улучшенный грузовой каркас</ATR_Install_AdvancedAlignmentFrame.label>
+  <ATR_Install_AdvancedAlignmentFrame.description>Замена каркаса этого агрегата на улучшенный грузовой каркас, что значительно повысит полезность в качестве средства для транспортировки грузов и уменьшит расход батареи.</ATR_Install_AdvancedAlignmentFrame.description>
+
+</LanguageData>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Standard Frames -->
+    <!-- Placeholder -->
+	<!-- <HediffDef ParentName="ATR_AddedBodyPartFrameworkBase">
+		<defName>ATR_AlignmentFrame</defName>
+		<label>Alignment Frame</label>
+		<description>Originally designed for the M.U.F.F. unit, but now seeing much greater use with the superior TORT, this frame aligns the components associated with the primary motor function elements of a creature - that of carrying "itself" (and its essentials) from A to B. It can be added to a regular android, if that's what you really want...</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<CarryingCapacity>90</CarryingCapacity>
+					<MoveSpeed>1.6</MoveSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThingDef ParentName="ATR_BodyPartFrameworkBase">
+		<defName>ATR_AlignmentFrame</defName>
+		<label>Alignment Frame</label>
+		<description>Originally designed for the M.U.F.F. unit, but now seeing much greater use with the superior TORT, this frame aligns the components associated with the primary motor function elements of a creature - that of carrying "itself" (and its essentials) from A to B. It can be added to a regular android, if that's what you really want...</description>
+		<statBases>
+			<MarketValue>900</MarketValue>
+		</statBases>
+		<costList>
+			<Steel>100</Steel>
+			<Plasteel>40</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+	</ThingDef>
+
+	<RecipeDef ParentName="ATR_SurgeryFramework">
+		<defName>ATR_Install_AlignmentFrame</defName>
+		<label>Install Alignment Frame</label>
+		<description>Replaces the chassis frame of this unit with an alignment frame, greatly enhancing the unit's usefulness as a hauling pack animal.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ATR_AlignmentFrame</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ATR_AlignmentFrame</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>ATR_AlignmentFrame</addsHediff>
+	</RecipeDef> -->
+
+<!-- Advanced Standard Frames -->
+	<!-- Noble -->
+	<HediffDef ParentName="ATR_AddedBodyPartFrameworkBase">
+		<defName>ATR_NobleFrame</defName>
+		<label>Noble Frame</label>
+		<description>A plasteel chassis framework almost completely concealed by ornately carved patterns of inlaid jade and precious metals. Every part of it exquisitely and precisely etched, carved, and designed to meet the most refined and noble beauty standard possible. The underlying plasteel exposed only where it may strategically enhance the regal bearing imparted by the frame. The complexity of the decoration wastes many materials during construction, but the bulk and required quality of the framework also imparts some resistance to damage.</description>
+		<keepOnBodyPartRestoration>false</keepOnBodyPartRestoration>
+		<stages>
+			<li>
+				<statOffsets>
+					<PawnBeauty>2</PawnBeauty>
+					<SocialImpact>1</SocialImpact>
+					<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.2</SlaveSuppressionOffset>
+					<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+				</statOffsets>
+				<statFactors>
+					<NegotiationAbility>1.8</NegotiationAbility>
+					<TradePriceImprovement>1.4</TradePriceImprovement>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThingDef ParentName="ATR_BodyPartAdvancedFrameworkBase">
+		<defName>ATR_NobleFrame</defName>
+		<label>Noble Frame</label>
+		<description>A plasteel chassis framework almost completely concealed by ornately carved patterns of inlaid jade and precious metals. Every part of it exquisitely and precisely etched, carved, and designed to meet the most refined and noble beauty standard possible. The underlying plasteel exposed only where it may strategically enhance the regal bearing imparted by the frame. The complexity of the decoration wastes many materials during construction, but the bulk and required quality of the framework also imparts some resistance to damage.</description>
+		<statBases>
+			<MarketValue>1600</MarketValue>
+			<Mass>10</Mass>
+		</statBases>
+		<costList>
+			<Plasteel>60</Plasteel>
+			<Silver>80</Silver>
+			<Gold>24</Gold>
+			<Jade>18</Jade>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+				<Artistic>14</Artistic>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+	<RecipeDef ParentName="ATR_SurgeryAdvancedFramework">
+		<defName>ATR_Install_NobleFrame</defName>
+		<label>Install Noble Frame</label>
+		<description>Replaces the chassis frame of this unit with a noble frame, accentuating beauty and presence, imbuing an incomparably regal bearing. Installing the frame is as much up to the components as to the artistic skills of its installer, as there is no way to standardize the beauty of the intricate design.</description>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+			<Artistic>14</Artistic>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ATR_NobleFrame</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ATR_NobleFrame</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>ATR_NobleFrame</addsHediff>
+	</RecipeDef>
+
+</Defs>

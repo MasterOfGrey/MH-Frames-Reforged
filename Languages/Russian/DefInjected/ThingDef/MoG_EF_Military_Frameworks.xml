@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Thermal Pumped Frame -->
+
+  <ATR_ThermalPumpedFrame.label>Термозащитный каркас</ATR_ThermalPumpedFrame.label>
+  <ATR_ThermalPumpedFrame.description>Каркас рамы из пластали с боевым уклоном, разработанный в качестве чисто военной модернизации для Защитного каркаса. Механитовый антифриз, созданный с помощью люциферия, непрерывно циркулирует по микроканалам, обеспечивая превосходную тепловую защиту в боевых условиях.</ATR_ThermalPumpedFrame.description>
+
+
+</LanguageData>

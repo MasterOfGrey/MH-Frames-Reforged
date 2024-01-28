@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Thermal Pumped Frame -->
+
+  <ATR_Install_ThermalPumpedFrame.label>Установить термозащитный каркас</ATR_Install_ThermalPumpedFrame.label>
+  <ATR_Install_ThermalPumpedFrame.description>Замена каркаса этого агрегата на термозащитный каркас с тепловым насосом, повышающим боеспособность при экстремальных температурах.</ATR_Install_ThermalPumpedFrame.description>
+
+
+</LanguageData>

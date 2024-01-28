@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Industrial Frames -->
+    <!-- Hydraulic -->
+    <!-- Only the Hediff is changed from base ATR -->
+    <HediffDef ParentName="ATR_AddedBodyPartFrameworkBase">
+        <defName>ATR_HydraulicFrame</defName>
+        <label>Hydraulic Frame</label>
+        <description>A chassis framework designed to maximize the amount of weight the frame can safely handle for short and long term needs. The redesigned frame also allows for greatly enhanced general labor speed.</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <CarryingCapacity>80</CarryingCapacity>
+                    <EF_CaravanCapacity>80</EF_CaravanCapacity>
+					<GeneralLaborSpeed>1</GeneralLaborSpeed>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+    
+    <!-- Alignment -->
+    <HediffDef ParentName="ATR_AddedBodyPartFrameworkBase">
+        <defName>ATR_AlignmentFrame</defName>
+        <label>Alignment Frame</label>
+	    <description>Originally designed for the M.U.F.F. unit, but now seeing much greater use with the superior TORT, this frame aligns the components associated with the primary motor function elements of a creature - that of carrying "itself" (and its essentials) from A to B. It can be added to a regular android, if that's what you really want...</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<CarryingCapacity>90</CarryingCapacity>
+                    <EF_CaravanCapacity>90</EF_CaravanCapacity>
+					<MoveSpeed>1.6</MoveSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+    </HediffDef>
+
+    <ThingDef ParentName="ATR_BodyPartFrameworkBase">
+        <defName>ATR_AlignmentFrame</defName>
+        <label>Alignment Frame</label>
+        <description>Originally designed for the M.U.F.F. unit, but now seeing much greater use with the superior TORT, this frame aligns the components associated with the primary motor function elements of a creature - that of carrying "itself" (and its essentials) from A to B. It can be added to a regular android, if that's what you really want...</description>
+        <statBases>
+            <MarketValue>900</MarketValue>
+        </statBases>
+        <costList>
+            <Steel>100</Steel>
+            <Plasteel>40</Plasteel>
+            <ComponentSpacer>2</ComponentSpacer>
+        </costList>
+    </ThingDef>
+	
+    <RecipeDef ParentName="ATR_SurgeryFramework">
+		<defName>ATR_Install_AlignmentFrame</defName>
+		<label>Install Alignment Frame</label>
+		<description>Replaces the chassis frame of this unit with an alignment frame, greatly enhancing the unit's usefulness as a hauling pack animal.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ATR_AlignmentFrame</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ATR_AlignmentFrame</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>ATR_AlignmentFrame</addsHediff>
+	</RecipeDef>
+
+<!-- Advanced Industrial Frames -->
+    <!-- Advanced Hydraulic -->
+    <HediffDef ParentName="ATR_AddedBodyPartFrameworkBase">
+        <defName>ATR_AdvancedHydraulicFrame</defName>
+        <label>Advanced Hydraulic Frame</label>
+        <description>An upgrade to the hydraulic chassis framework using exceedingly high quality components to not only maximize manageable weight and improve efficiency at basic tasks, but also to use regenerative braking inverters to assist with battery longevity. The scale of mechanical assistance provides minimal benefits that assist work capabilities across the board.</description>
+        <stages>
+            <li>
+                <statOffsets>
+					<CarryingCapacity>120</CarryingCapacity>
+                    <EF_CaravanCapacity>120</EF_CaravanCapacity>
+                    <GeneralLaborSpeed>1.4</GeneralLaborSpeed>
+                    <WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+                    <MoveSpeed>0.1</MoveSpeed>
+                </statOffsets>
+                <hungerRateFactor>0.8</hungerRateFactor>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <ThingDef ParentName="ATR_BodyPartAdvancedFrameworkBase">
+        <defName>ATR_AdvancedHydraulicFrame</defName>
+        <label>Advanced Hydraulic Frame</label>
+        <description>An upgrade to the hydraulic chassis framework using exceedingly high quality components to not only maximize manageable weight and improve efficiency at basic tasks, but also to use regenerative braking inverters to assist with battery longevity. The scale of mechanical assistance provides minimal benefits to work capabilities across the board.</description>
+        <statBases>
+            <MarketValue>2000</MarketValue>
+        </statBases>
+        <costList>
+            <Steel>40</Steel>
+            <Plasteel>100</Plasteel>
+            <ComponentSpacer>6</ComponentSpacer>
+        </costList>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>12</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>ATR_AdvancedMechanicalFrameworks</researchPrerequisite>
+        </recipeMaker>
+    </ThingDef>
+
+    <RecipeDef ParentName="ATR_SurgeryAdvancedFramework">
+		<defName>ATR_Install_AdvancedHydraulicFrame</defName>
+		<label>Install Advanced Hydraulic Frame</label>
+		<description>Replaces the chassis frame of this unit with an advanced hydraulic frame, greatly enhancing weight capacity, general labor efficiency, and reducing battery drain.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ATR_AdvancedHydraulicFrame</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ATR_AdvancedHydraulicFrame</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>ATR_AdvancedHydraulicFrame</addsHediff>
+	</RecipeDef>
+
+    <!-- Advanced Alignment -->
+    <HediffDef ParentName="ATR_AddedBodyPartFrameworkBase">
+        <defName>ATR_AdvancedAlignmentFrame</defName>
+        <label>Advanced Alignment Frame</label>
+	    <description>An upgrade to the alignment chassis framework, this frame aligns the components associated with the primary motor function elements of a creature and includes regenerative braking inverters to assist with battery longevity. The regenerative bonuses to battery life make it advantageous for any mechanical involved in significant travel.</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <CarryingCapacity>150</CarryingCapacity>
+                    <EF_CaravanCapacity>150</EF_CaravanCapacity>
+                    <MoveSpeed>1.8</MoveSpeed>
+                </statOffsets>
+                <hungerRateFactor>0.8</hungerRateFactor>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <ThingDef ParentName="ATR_BodyPartAdvancedFrameworkBase">
+        <defName>ATR_AdvancedAlignmentFrame</defName>
+        <label>Advanced Alignment Frame</label>
+        <description>An upgrade to the alignment chassis framework, this frame aligns the components associated with the primary motor function elements of a creature and includes regenerative braking inverters to assist with battery longevity. The regenerative bonuses to battery life make it advantageous for any mechanical involved in significant travel.</description>
+        <statBases>
+            <MarketValue>900</MarketValue>
+        </statBases>
+        <costList>
+            <Steel>40</Steel>
+            <Plasteel>100</Plasteel>
+            <ComponentSpacer>4</ComponentSpacer>
+        </costList>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>12</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>ATR_AdvancedMechanicalFrameworks</researchPrerequisite>
+        </recipeMaker>
+    </ThingDef>
+	
+    <RecipeDef ParentName="ATR_SurgeryAdvancedFramework">
+		<defName>ATR_Install_AdvancedAlignmentFrame</defName>
+		<label>Install Advanced Alignment Frame</label>
+		<description>Replaces the chassis frame of this unit with an advanced alignment frame, greatly enhancing the unit's endurance and carrying utility.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ATR_AdvancedAlignmentFrame</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ATR_AdvancedAlignmentFrame</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>ATR_AdvancedAlignmentFrame</addsHediff>
+	</RecipeDef>
+
+</Defs>

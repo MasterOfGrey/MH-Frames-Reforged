@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Military Frames -->
+<!-- All have at least:
+				<statOffsets>
+					<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+				</statOffsets>
+(from Plasteel Frame) -->
+
+    <!-- Thermal Pumped Frame -->
+
+    <HediffDef ParentName="ATR_AddedBodyPartFrameworkBase">
+        <defName>ATR_ThermalPumpedFrame</defName>
+        <label>Thermal Pumped Frame</label>
+		<description>A combat-rated plasteel chassis frame designed to act as a purely military upgrade to the Guardian frame. Luciferium infused mechanite antifreeze is continuously circulated through microchannels to offer superlative temperature protection in combat situations.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+                    <ArmorRating_Heat>1.5</ArmorRating_Heat>
+					<ComfyTemperatureMin>-40</ComfyTemperatureMin>
+					<ComfyTemperatureMax>40</ComfyTemperatureMax>
+                    <Insulation_Heat>100</Insulation_Heat>
+                    <Insulation_Cold>50</Insulation_Cold>
+                </statOffsets>
+                <statFactors>
+                    <IncomingDamageFactor>0.95</IncomingDamageFactor>
+                </statFactors>
+			</li>
+		</stages>
+    </HediffDef>
+
+    <ThingDef ParentName="ATR_BodyPartFrameworkBase">
+        <defName>ATR_ThermalPumpedFrame</defName>
+        <label>Thermal Pumped Frame</label>
+        <description>A combat-rated plasteel chassis frame designed to act as a purely military upgrade to the Guardian frame. Luciferium infused mechanite antifreeze is continuously circulated through microchannels to offer superlative temperature protection in combat situations.</description>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+        </statBases>
+        <costList>
+            <Plasteel>60</Plasteel>
+            <ComponentSpacer>4</ComponentSpacer>
+            <ATR_MechAntifreeze>50</ATR_MechAntifreeze>
+            <Luciferium>1</Luciferium>
+        </costList>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>12</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>ATR_MilitaryFrameworks</researchPrerequisite>
+        </recipeMaker>
+    </ThingDef>
+
+    <RecipeDef ParentName="ATR_SurgeryFramework">
+        <defName>ATR_Install_ThermalPumpedFrame</defName>
+        <label>Install Thermal Pumped Frame</label>
+        <description>Replaces the chassis frame of this unit with a mechanite circulating thermal frame, enhancing combat capability in extreme temperatures.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ATR_ThermalPumpedFrame</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+        <thingDefs>
+            <li>ATR_ThermalPumpedFrame</li>
+        </thingDefs>
+        </fixedIngredientFilter>
+        <addsHediff>ATR_ThermalPumpedFrame</addsHediff>
+    </RecipeDef>
+
+	<!-- Martial Frame -->
+
+	<HediffDef ParentName="ATR_AddedBodyPartFrameworkBase">
+		<defName>ATR_MartialFrame</defName>
+		<label>Martial Frame</label>
+		<description>A combat-rated plasteel chassis frame designed to act as a purely military upgrade to the Mobility frame. It is, in all martial respects, a directly superior framework for combat purposes. However, achieving the same performance with the additional protection requires a subtle perversion of form which gives the bearer an uncanny demeanor.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<PawnBeauty>-0.5</PawnBeauty>
+					<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+					<MoveSpeed>1.5</MoveSpeed>
+					<MeleeDodgeChance>10</MeleeDodgeChance>
+				</statOffsets>
+				<statFactors>
+					<SocialImpact>0.8</SocialImpact>
+					<MeleeWeapon_CooldownMultiplier>0.7</MeleeWeapon_CooldownMultiplier>
+					<IncomingDamageFactor>0.95</IncomingDamageFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThingDef ParentName="ATR_BodyPartFrameworkBase">
+		<defName>ATR_MartialFrame</defName>
+		<label>Martial Frame</label>
+		<description>A combat-rated plasteel chassis frame designed to act as a purely military upgrade to the Mobility frame. It is, in all martial respects, a directly superior framework for combat purposes. However, achieving the same performance with the additional protection requires a subtle perversion of form which gives the bearer an uncanny demeanor.</description>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+		</statBases>
+		<costList>
+			<Plasteel>70</Plasteel>
+			<ComponentSpacer>8</ComponentSpacer>
+			<ATR_MechSwarm>4</ATR_MechSwarm>
+			<Luciferium>1</Luciferium>
+		</costList>
+	</ThingDef>
+
+	<RecipeDef ParentName="ATR_SurgeryFramework">
+		<defName>ATR_Install_MartialFrame</defName>
+		<label>Install Martial Frame</label>
+		<description>Replaces the chassis frame of this unit with a mobility enhanced, tempered plasteel-infused frame, enhancing both melee capability and combat survivability.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ATR_MartialFrame</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+		<thingDefs>
+			<li>ATR_MartialFrame</li>
+		</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>ATR_MartialFrame</addsHediff>
+	</RecipeDef>
+
+<!-- Advanced Military Frames -->
+
+
+</Defs>

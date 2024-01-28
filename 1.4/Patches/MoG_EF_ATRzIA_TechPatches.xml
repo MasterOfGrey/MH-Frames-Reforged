@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Adjust ATR Techs for Extra Frames if IA does not exist. -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName = "ATR_MilitaryFrameworks"]</xpath>
+		<!-- Success means IA is loaded, so nomatch is only ATR. -->
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+				<!-- New Tech - Add Military Frameworks (linchpin research project)-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ResearchProjectDef>
+							<defName>ATR_MilitaryFrameworks</defName>
+							<label>Military frameworks</label>
+							<tab>ATR_MechResearch</tab>
+							<description>Application of advanced ingredients, such as luciferium, to otherwise simple combat-improving framework enhancements allows for truly superior outcomes to be achieved in military applications.</description>
+							<baseCost>1200</baseCost>
+							<techLevel>Industrial</techLevel>
+							<prerequisites>
+								<li>ATR_MechanicalFrameworks</li>
+								<li>ATR_MechanicalStimulators</li>
+							</prerequisites>
+							<researchViewX>6.00</researchViewX>
+							<researchViewY>0.75</researchViewY>
+						</ResearchProjectDef>
+					</value></li>
+				<!-- Put Composite Plating in appropriate tech. -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "ATR_CompositePlating"]</xpath>
+					<value><recipeMaker><researchPrerequisite>ATR_MilitaryFrameworks</researchPrerequisite></recipeMaker></value></li>
+				
+				<!-- ATR_MilitaryBiomimetics -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ResearchProjectDef[defName = "ATR_MilitaryBiomimetics"]/researchViewX</xpath>
+					<value><researchViewX>7.00</researchViewX></value></li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ResearchProjectDef[defName = "ATR_MilitaryBiomimetics"]/researchViewY</xpath>
+					<value><researchViewY>3.20</researchViewY></value></li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ResearchProjectDef[defName = "ATR_MilitaryBiomimetics"]/prerequisites</xpath>
+					<value><prerequisites><li>ATR_UtilityBiomimetics</li><li>ATR_MilitaryFrameworks</li></prerequisites></value></li>
+			</operations>
+		</nomatch>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>ATR Industrial Automatons - Android Tiers</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+					<!-- Tech tweaks for the expanded research tree. -->
+					<li Class="PatchOperationFindMod">
+						<mods>
+							<li>ATR MUFF Reforged - Android Tiers</li>
+						</mods>
+						<match Class="PatchOperationSequence">
+							<operations>
+								<!-- Tweak for MUFF Reforged Tech. -->
+								<!-- ATR_AdvancedIndustrialFrames -->
+								<li Class="PatchOperationReplace">
+									<xpath>Defs/ResearchProjectDef[defName = "ATR_AdvancedIndustrialFrames"]/prerequisites</xpath>
+									<value><prerequisites><li>ATR_AdvancedMechanicalFrameworks</li><li>ATR_IndustrialUtilityFrameworks</li><li>ATR_MultiUtilityMimetics</li></prerequisites></value></li>
+							</operations>
+						</match>
+					</li>
+					
+					<!-- Move new frames to correct unlock projects. -->
+					<!-- ATR_AlignmentFrame -->
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "ATR_AlignmentFrame"]</xpath>
+						<value><recipeMaker><researchPrerequisite>ATR_IndustrialUtilityFrameworks</researchPrerequisite></recipeMaker></value></li>
+					
+					<!-- ATR_AdvancedHydraulicFrame -->
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName = "ATR_AdvancedHydraulicFrame"]/recipeMaker/researchPrerequisite</xpath>
+						<value><researchPrerequisite>ATR_AdvancedIndustrialFrames</researchPrerequisite></value></li>
+					<!-- ATR_AdvancedAlignmentFrame -->
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName = "ATR_AdvancedAlignmentFrame"]/recipeMaker/researchPrerequisite</xpath>
+						<value><researchPrerequisite>ATR_AdvancedIndustrialFrames</researchPrerequisite></value></li>
+				</operations>
+			</match>
+		</match>
+	</Operation>
+
+</Patch>

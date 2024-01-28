@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<StatDef>
+		<defName>EF_CaravanCapacity</defName>
+		<label>frame carrying weight</label>
+		<description>The additional mass that this mechanical entity can carry under all circumstances due to framework enhancements.</description>
+		<category>BasicsPawn</category>
+		<defaultBaseValue>0</defaultBaseValue>
+		<minValue>0</minValue>
+		<toStringStyle>Integer</toStringStyle>
+		<parts>
+			<li Class="StatPart_BodySize" />
+		</parts>
+		<capacityFactors>
+			<li>
+				<capacity>Moving</capacity>
+			</li>
+		</capacityFactors>
+		<displayPriorityInCategory>2202</displayPriorityInCategory>
+	</StatDef>
+
+</Defs>

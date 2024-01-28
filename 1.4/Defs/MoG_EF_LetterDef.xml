@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<LetterDef>
+		<defName>MH_FR_success_letter</defName>
+		<color>(65, 200, 65)</color>
+		<flashColor>(85, 255, 85)</flashColor>
+		<flashInterval>6</flashInterval>
+		<bounce>false</bounce>
+		<arriveSound>LetterArrive_Good</arriveSound>
+		<description>Frames Reforged is successfully loaded. Frames which add carrying capacity also add to the pawn's weight capacity for equipped gear and overworld travel.</description>
+	</LetterDef>
+</Defs>
