@@ -96,8 +96,8 @@ ATR Team:
         <li>
             <packageId>Killathon.MechHumanlikes.AndroidTiersCore</packageId>
             <displayName>MH: Android Tiers Core</displayName>
-            <steamWorkshopUrl>steam://url/CommunityFilePage/2917948202</steamWorkshopUrl>
-            <downloadUrl>https://github.com/RWDevathon/Android-Tiers-Reforged/releases/latest</downloadUrl>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2974536022</steamWorkshopUrl>
+            <downloadUrl>https://github.com/RWDevathon/Android-Tiers-Reforged-Core/releases/latest</downloadUrl>
         </li>
     </modDependencies>
 	<incompatibleWith>

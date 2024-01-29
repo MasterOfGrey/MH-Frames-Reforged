@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<!-- Adjust ATR Techs for Extra Frames if IA does not exist. -->
+	<!-- Adjust MH:ATC Techs for Extra Frames if IA does not exist. -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ResearchProjectDef[defName = "ATR_MilitaryFrameworks"]</xpath>
-		<!-- Success means IA is loaded, so nomatch is only ATR. -->
+		<!-- Success means IA is loaded, so nomatch is only ATC. -->
+		<!-- THIS is only ATC. -->
 		<nomatch Class="PatchOperationSequence">
 			<operations>
 				<!-- New Tech - Add Military Frameworks (linchpin research project)-->
@@ -22,8 +23,8 @@
 								<li>ATR_MechanicalFrameworks</li>
 								<li>ATR_MechanicalStimulators</li>
 							</prerequisites>
-							<researchViewX>6.00</researchViewX>
-							<researchViewY>0.75</researchViewY>
+							<researchViewX>4.00</researchViewX>
+							<researchViewY>2.55</researchViewY>
 						</ResearchProjectDef>
 					</value></li>
 				<!-- Put Composite Plating in appropriate tech. -->
@@ -31,25 +32,41 @@
 					<xpath>Defs/ThingDef[defName = "ATR_CompositePlating"]</xpath>
 					<value><recipeMaker><researchPrerequisite>ATR_MilitaryFrameworks</researchPrerequisite></recipeMaker></value></li>
 				
-				<Operation Class="PatchOperationFindMod">
+				<!-- With NO IA, but BOTH MH:ATC & MH:ATB. -->
+				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>MH: Mechanical Biomimetics</li>
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
+							<!-- ATR_MechanicalFrameworks -->
+							<li Class="PatchOperationReplace">
+								<xpath>Defs/ResearchProjectDef[defName = "ATR_MechanicalFrameworks"]/researchViewX</xpath>
+								<value><researchViewX>3.00</researchViewX></value></li>
+							<li Class="PatchOperationReplace">
+								<xpath>Defs/ResearchProjectDef[defName = "ATR_MechanicalFrameworks"]/researchViewY</xpath>
+								<value><researchViewY>0.00</researchViewY></value></li>
+							<!-- ATB_MechanicalStimulators -->
+							<li Class="PatchOperationReplace">
+								<xpath>Defs/ResearchProjectDef[defName = "ATR_MechanicalStimulators"]/researchViewY</xpath>
+								<value><researchViewY>2.55</researchViewY></value></li>
+							<!-- ATB_UtilityBiomimetics -->
+							<li Class="PatchOperationReplace">
+								<xpath>Defs/ResearchProjectDef[defName = "ATB_UtilityBiomimetics"]/researchViewY</xpath>
+								<value><researchViewY>3.55</researchViewY></value></li>
 							<!-- ATB_MilitaryBiomimetics -->
 							<li Class="PatchOperationReplace">
 								<xpath>Defs/ResearchProjectDef[defName = "ATB_MilitaryBiomimetics"]/researchViewX</xpath>
-								<value><researchViewX>7.00</researchViewX></value></li>
+								<value><researchViewX>5.00</researchViewX></value></li>
 							<li Class="PatchOperationReplace">
 								<xpath>Defs/ResearchProjectDef[defName = "ATB_MilitaryBiomimetics"]/researchViewY</xpath>
-								<value><researchViewY>3.20</researchViewY></value></li>
+								<value><researchViewY>3.55</researchViewY></value></li>
 							<li Class="PatchOperationReplace">
 								<xpath>Defs/ResearchProjectDef[defName = "ATB_MilitaryBiomimetics"]/prerequisites</xpath>
 								<value><prerequisites><li>ATB_UtilityBiomimetics</li><li>ATR_MilitaryFrameworks</li></prerequisites></value></li>
 						</operations>
 					</match>
-				</Operation>
+				</li>
 			</operations>
 		</nomatch>
 		<match Class="PatchOperationFindMod">
