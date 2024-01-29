@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-
-	<!-- Adjust ATR Defs for Extra Frames -->
+	<!-- Adjust MH:ATC Defs for Frames Reforged -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Android Tiers Reforged</li>
+			<li>MH: Android Tiers Core</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
@@ -42,5 +41,5 @@
 			</operations>
 		</match>
 	</Operation>
-    
+
 </Patch>

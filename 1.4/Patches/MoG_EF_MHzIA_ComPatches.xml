@@ -31,21 +31,30 @@
 					<xpath>Defs/ThingDef[defName = "ATR_CompositePlating"]</xpath>
 					<value><recipeMaker><researchPrerequisite>ATR_MilitaryFrameworks</researchPrerequisite></recipeMaker></value></li>
 				
-				<!-- ATR_MilitaryBiomimetics -->
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/ResearchProjectDef[defName = "ATR_MilitaryBiomimetics"]/researchViewX</xpath>
-					<value><researchViewX>7.00</researchViewX></value></li>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/ResearchProjectDef[defName = "ATR_MilitaryBiomimetics"]/researchViewY</xpath>
-					<value><researchViewY>3.20</researchViewY></value></li>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/ResearchProjectDef[defName = "ATR_MilitaryBiomimetics"]/prerequisites</xpath>
-					<value><prerequisites><li>ATR_UtilityBiomimetics</li><li>ATR_MilitaryFrameworks</li></prerequisites></value></li>
+				<Operation Class="PatchOperationFindMod">
+					<mods>
+						<li>MH: Mechanical Biomimetics</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- ATB_MilitaryBiomimetics -->
+							<li Class="PatchOperationReplace">
+								<xpath>Defs/ResearchProjectDef[defName = "ATB_MilitaryBiomimetics"]/researchViewX</xpath>
+								<value><researchViewX>7.00</researchViewX></value></li>
+							<li Class="PatchOperationReplace">
+								<xpath>Defs/ResearchProjectDef[defName = "ATB_MilitaryBiomimetics"]/researchViewY</xpath>
+								<value><researchViewY>3.20</researchViewY></value></li>
+							<li Class="PatchOperationReplace">
+								<xpath>Defs/ResearchProjectDef[defName = "ATB_MilitaryBiomimetics"]/prerequisites</xpath>
+								<value><prerequisites><li>ATB_UtilityBiomimetics</li><li>ATR_MilitaryFrameworks</li></prerequisites></value></li>
+						</operations>
+					</match>
+				</Operation>
 			</operations>
 		</nomatch>
 		<match Class="PatchOperationFindMod">
 			<mods>
-				<li>ATR Industrial Automatons - Android Tiers</li>
+				<li>MH: Industrial Automatons - Android Tiers</li>
 			</mods>
 			<match Class="PatchOperationSequence">
 				<operations>
