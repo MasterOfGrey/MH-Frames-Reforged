@@ -39,11 +39,12 @@ I am happy to add other unique frames if people want them.
 [img]https://i.imgur.com/Qp8JBtZ.png[/img]
 [h1]Recommended:[/h1]
 [list]
-[*]Works best with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2944347505]ATR Industrial Automatons[/url]!
-[*]Works best with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2962634958]ATR MUFF Reforged[/url]!
+[*]Works best with MH: Industrial Automatons!
+[*]Works best with MH: MUFF Reforged!
+[*]See my Choice Collection [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3151500886]here[/url]!
 [/list]
 
-[h1]Compatibility:[/h1]
+[h1]Incompatibilities:[/h1]
 [list]
 [*]No known incompatibilities.*
 [/list]
@@ -71,7 +72,7 @@ Go to the GitHub (linked below) and submit a pull request.
 
 [h1]Links[/h1]
 The Repo for this mod can be found here:
-[url=https://github.com/MasterOfGrey/ATR-Extra-Frames/tree/Legacy-ATR]GitHub[/url]
+[url=https://github.com/MasterOfGrey/MH-Frames-Reforged]GitHub[/url]
 I hang out in the discord for the main Android Tiers Reforged mod:
 [url=https://discord.gg/udNCpbkABT]Discord[/url]
 
@@ -91,7 +92,7 @@ ATR Team:
 		<li>1.4</li>
 	</supportedVersions>
 	<packageId>MasterOfGrey.ExtraFramesMH</packageId>
-	<url>https://github.com/MasterOfGrey/ATR-Extra-Frames/releases/latest</url>
+	<url>https://github.com/MasterOfGrey/MH-Frames-Reforged/releases/latest</url>
 	<modDependencies>
         <li>
             <packageId>Killathon.MechHumanlikes.AndroidTiersCore</packageId>
@@ -102,6 +103,7 @@ ATR Team:
     </modDependencies>
 	<incompatibleWith>
 		<li>Atlas.AndroidTiers</li><!--Having them both active at the same time would be a little silly -->
+		<li>Killathon.AndroidTiersReforged</li><!--Having them both active at the same time would be a little silly -->
 		<li>EdB.PrepareCarefully</li><!-- Hijacks generated/edited pawns at world start, breaks C# hediffs of edited pawns and who knows what else -->
 		<li>EdB.PrepareCarefully.UnofficialPatch</li><!-- Hijacks generated/edited pawns at world start, breaks C# hediffs of edited pawns and who knows what else -->
 		<li>EdB.PrepareCarefully.alonske.fork</li><!-- Hijacks generated/edited pawns at world start, breaks C# hediffs of edited pawns and who knows what else -->
