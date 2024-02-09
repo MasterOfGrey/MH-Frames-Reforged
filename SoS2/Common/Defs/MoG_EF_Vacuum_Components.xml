@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ResourceBase">
+		<defName>MiniComponentVacuum</defName>
+		<label>Miniature vacuum-pump component</label>
+		<description>Mini-Advanced computing and energy-directing machinery for animal prosthetic.</description>
+		<descriptionHyperlinks><RecipeDef>Make_MiniComponentVacuum</RecipeDef></descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Resource/ComponentSpacer</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.75</drawSize>
+			<color>(0.8, 0.4, 0.8)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>50</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>40</MaxHitPoints>
+			<MarketValue>65</MarketValue>
+			<Mass>0.2</Mass>
+			<Flammability>0.6</Flammability>
+			<DeteriorationRate>2.0</DeteriorationRate>
+		</statBases>
+		<intricate>true</intricate>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<thingSetMakerTags><li>RewardStandardHighFreq</li></thingSetMakerTags>
+	</ThingDef>
+
+	<RecipeDef>
+		<defName>Make_MiniComponentVacuum</defName>
+		<label>Make mini vacuum-pump component x8</label>
+		<description>Make an advanced Mini component.</description>
+		<descriptionHyperlinks><ThingDef>MiniComponentVacuum</ThingDef></descriptionHyperlinks>
+		<jobString>Making advanced Mini component.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workAmount>8000</workAmount>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<recipeUsers>
+			<li>FabricationBench</li>
+			<li>ATR_MechPartWorkbench</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					<li>ComponentSpacer</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+					<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+					<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ComponentSpacer</li>
+				<li>Plasteel</li>
+				<li>Gold</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<MiniComponentVacuum>8</MiniComponentVacuum>
+		</products>
+		<researchPrerequisite>ATR_VacuumFrameworks</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+</Defs>

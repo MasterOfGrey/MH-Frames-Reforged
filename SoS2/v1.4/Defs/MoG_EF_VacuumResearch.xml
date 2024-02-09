@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- VacuumFramework Bases -->
+	<ResearchProjectDef>
+		<defName>ATR_VacuumFrameworks</defName>
+		<label>Vacuum frameworks</label>
+		<tab>ATR_MechResearch</tab>
+		<description>The pinnacle of framework engineering, utilising specialised components and mechanite boosters, these top-end spacer framework enhancements allow one to operate indefinitely in vacuum. This is achieved with distributed heat pumps to concentrate hot coolant into mirror-backed channels to radiate away excess heat without air exchange.\n\nGiven the enormous expense involved in creating these, an android will typically choose one they expect to use forever, as no viable components can be salavaged from uninstalling one.</description>
+		<baseCost>5000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>ATR_AdvancedMechanicalFrameworks</li>
+		</prerequisites>
+		<researchViewX>7.00</researchViewX>
+		<researchViewY>0.70</researchViewY>
+	</ResearchProjectDef>
+
+</Defs>

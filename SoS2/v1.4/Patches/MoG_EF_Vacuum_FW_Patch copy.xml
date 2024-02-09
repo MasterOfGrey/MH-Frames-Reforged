@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Patch on Self: VacuumFramework Base Values -->
+	<Operation Class="PatchOperationAdd">
+	<xpath>Defs/HediffDef[@ParentName="ATR_AddedVacuumFrameworkBase"]/stages/li/statOffsets</xpath>
+		<value><HypoxiaResistance>1</HypoxiaResistance></value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+	<xpath>Defs/HediffDef[@ParentName="ATR_AddedVacuumFrameworkBase"]/stages/li/statOffsets</xpath>
+		<value><DecompressionResistance>1</DecompressionResistance></value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+	<xpath>Defs/HediffDef[@ParentName="ATR_AddedVacuumFrameworkBase"]/stages/li/statOffsets</xpath>
+		<value><ArmorRating_Heat>0.4</ArmorRating_Heat></value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+	<xpath>Defs/HediffDef[@ParentName="ATR_AddedVacuumFrameworkBase"]/stages/li/statOffsets</xpath>
+		<value><ComfyTemperatureMin>-30</ComfyTemperatureMin></value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+	<xpath>Defs/HediffDef[@ParentName="ATR_AddedVacuumFrameworkBase"]/stages/li/statOffsets</xpath>
+		<value><ComfyTemperatureMax>30</ComfyTemperatureMax></value>
+	</Operation>
+
+</Patch>

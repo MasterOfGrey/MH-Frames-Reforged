@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!-- Vacuum Standard Frames -->
+	<!-- Vacuum Noble -->
+	<HediffDef ParentName="ATR_AddedVacuumFrameworkBase">
+		<defName>ATR_VacuumNobleFrame</defName>
+		<label>Vacuum Noble Frame</label>
+		<description>A plasteel chassis framework almost completely concealed by ornately carved patterns of inlaid jade and precious metals. Every part of it exquisitely and precisely etched, carved, and designed to meet the most refined and noble beauty standard possible. The underlying plasteel exposed only where it may strategically enhance the regal bearing imparted by the frame. The complexity of the decoration wastes many materials during construction, but the bulk and required quality of the framework also imparts some resistance to damage.\n\nThis top-end spacer framework also allows one to operate indefinitely in vacuum. This is achieved with distributed heat pumps to concentrate hot coolant into mirror-backed channels to radiate away excess heat without air exchange, though, this does make insufficiently heat-resistant clothing very impractical to wear.</description>
+		<keepOnBodyPartRestoration>false</keepOnBodyPartRestoration>
+		<stages>
+			<li>
+				<statOffsets>
+					<PawnBeauty>2</PawnBeauty>
+					<SocialImpact>1</SocialImpact>
+					<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.2</SlaveSuppressionOffset>
+					<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+				</statOffsets>
+				<statFactors>
+					<NegotiationAbility>1.8</NegotiationAbility>
+					<TradePriceImprovement>1.4</TradePriceImprovement>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThingDef ParentName="ATR_VacuumFrameworkBase">
+		<defName>ATR_VacuumNobleFrame</defName>
+		<label>Vacuum Noble Frame</label>
+		<description>A plasteel chassis framework almost completely concealed by ornately carved patterns of inlaid jade and precious metals. Every part of it exquisitely and precisely etched, carved, and designed to meet the most refined and noble beauty standard possible. The underlying plasteel exposed only where it may strategically enhance the regal bearing imparted by the frame. The complexity of the decoration wastes many materials during construction, but the bulk and required quality of the framework also imparts some resistance to damage.\n\nThis top-end spacer framework also allows one to operate indefinitely in vacuum. This is achieved with distributed heat pumps to concentrate hot coolant into mirror-backed channels to radiate away excess heat without air exchange, though, this does make insufficiently heat-resistant clothing very impractical to wear.</description>
+		<statBases>
+			<MarketValue>1600</MarketValue>
+			<Mass>10</Mass>
+		</statBases>
+		<costList>
+			<Plasteel>60</Plasteel>
+			<Silver>80</Silver>
+			<Gold>24</Gold>
+			<Jade>18</Jade>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+				<Artistic>14</Artistic>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+	<RecipeDef ParentName="ATR_SurgeryVacuumFramework">
+		<defName>ATR_Install_VacuumNobleFrame</defName>
+		<label>Install Vacuum Noble Frame</label>
+		<description>Replaces the chassis frame of this unit with a noble frame, accentuating beauty and presence, imbuing an incomparably regal bearing. Installing the frame is as much up to the components as to the artistic skills of its installer, as there is no way to standardize the beauty of the intricate design.</description>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+			<Artistic>14</Artistic>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ATR_VacuumNobleFrame</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ATR_VacuumNobleFrame</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>ATR_VacuumNobleFrame</addsHediff>
+	</RecipeDef>
+
+<!-- Vacuum Industrial Frames -->
+	<!-- Vacuum Hydraulic -->
+	<HediffDef ParentName="ATR_AddedVacuumFrameworkBase">
+		<defName>ATR_VacuumHydraulicFrame</defName>
+		<label>Vacuum Hydraulic Frame</label>
+		<description>An upgrade to the hydraulic chassis framework using exceedingly high quality components to not only maximize manageable weight and improve efficiency at basic tasks, but also to use regenerative braking inverters to assist with battery longevity. The scale of mechanical assistance provides minimal benefits that assist work capabilities across the board.\n\nThis top-end spacer framework also allows one to operate indefinitely in vacuum. This is achieved with distributed heat pumps to concentrate hot coolant into mirror-backed channels to radiate away excess heat without air exchange, though, this does make insufficiently heat-resistant clothing very impractical to wear.</description>
+		<descriptionHyperlinks><ThingDef>ATR_VacuumHydraulicFrame</ThingDef></descriptionHyperlinks>
+		<stages>
+			<li>
+				<statOffsets>
+					<CarryingCapacity>120</CarryingCapacity>
+					<EF_CaravanCapacity>120</EF_CaravanCapacity>
+					<GeneralLaborSpeed>1.4</GeneralLaborSpeed>
+					<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+					<MoveSpeed>0.1</MoveSpeed>
+				</statOffsets>
+				<hungerRateFactor>0.8</hungerRateFactor>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThingDef ParentName="ATR_VacuumFrameworkBase">
+		<defName>ATR_VacuumHydraulicFrame</defName>
+		<label>Vacuum Hydraulic Frame</label>
+		<description>An upgrade to the hydraulic chassis framework using exceedingly high quality components to not only maximize manageable weight and improve efficiency at basic tasks, but also to use regenerative braking inverters to assist with battery longevity. The scale of mechanical assistance provides minimal benefits to work capabilities across the board.\n\nThis top-end spacer framework also allows one to operate indefinitely in vacuum. This is achieved with distributed heat pumps to concentrate hot coolant into mirror-backed channels to radiate away excess heat without air exchange, though, this does make insufficiently heat-resistant clothing very impractical to wear.</description>
+		<descriptionHyperlinks><RecipeDef>ATR_Install_VacuumHydraulicFrame</RecipeDef></descriptionHyperlinks>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+		</statBases>
+		<costList>
+			<Steel>40</Steel>
+			<Plasteel>100</Plasteel>
+			<ComponentSpacer>6</ComponentSpacer>
+		</costList>
+	</ThingDef>
+
+	<RecipeDef ParentName="ATR_SurgeryVacuumFramework">
+		<defName>ATR_Install_VacuumHydraulicFrame</defName>
+		<label>Install Vacuum Hydraulic Frame</label>
+		<description>Replaces the chassis frame of this unit with a vacuum-safe hydraulic frame, greatly enhancing weight capacity, general labor efficiency, and reducing battery drain.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ATR_VacuumHydraulicFrame</ThingDef>
+			<HediffDef>ATR_VacuumHydraulicFrame</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ATR_VacuumHydraulicFrame</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ATR_VacuumHydraulicFrame</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>ATR_VacuumHydraulicFrame</addsHediff>
+	</RecipeDef>
+
+	<!-- Vacuum Alignment -->
+	<HediffDef ParentName="ATR_AddedVacuumFrameworkBase">
+		<defName>ATR_VacuumAlignmentFrame</defName>
+		<label>Vacuum Alignment Frame</label>
+		<description>An upgrade to the alignment chassis framework, this frame aligns the components associated with the primary motor function elements of a creature and includes regenerative braking inverters to assist with battery longevity. The regenerative bonuses to battery life make it advantageous for any mechanical involved in significant travel.\n\nThis top-end spacer framework also allows one to operate indefinitely in vacuum. This is achieved with distributed heat pumps to concentrate hot coolant into mirror-backed channels to radiate away excess heat without air exchange, though, this does make insufficiently heat-resistant clothing very impractical to wear.</description>
+		<descriptionHyperlinks><ThingDef>ATR_VacuumAlignmentFrame</ThingDef></descriptionHyperlinks>
+		<stages>
+			<li>
+				<statOffsets>
+					<CarryingCapacity>150</CarryingCapacity>
+					<EF_CaravanCapacity>150</EF_CaravanCapacity>
+					<MoveSpeed>1.8</MoveSpeed>
+				</statOffsets>
+				<hungerRateFactor>0.8</hungerRateFactor>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThingDef ParentName="ATR_VacuumFrameworkBase">
+		<defName>ATR_VacuumAlignmentFrame</defName>
+		<label>Vacuum Alignment Frame</label>
+		<description>An upgrade to the alignment chassis framework, this frame aligns the components associated with the primary motor function elements of a creature and includes regenerative braking inverters to assist with battery longevity. The regenerative bonuses to battery life make it advantageous for any mechanical involved in significant travel.\n\nThis top-end spacer framework also allows one to operate indefinitely in vacuum. This is achieved with distributed heat pumps to concentrate hot coolant into mirror-backed channels to radiate away excess heat without air exchange, though, this does make insufficiently heat-resistant clothing very impractical to wear.</description>
+		<descriptionHyperlinks><RecipeDef>ATR_Install_VacuumAlignmentFrame</RecipeDef></descriptionHyperlinks>
+		<statBases>
+			<MarketValue>900</MarketValue>
+		</statBases>
+		<costList>
+			<Steel>40</Steel>
+			<Plasteel>100</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+	</ThingDef>
+
+	<RecipeDef ParentName="ATR_SurgeryVacuumFramework">
+		<defName>ATR_Install_VacuumAlignmentFrame</defName>
+		<label>Install Vacuum Alignment Frame</label>
+		<description>Replaces the chassis frame of this unit with a vacuum-safe alignment frame, greatly enhancing the unit's endurance and carrying utility.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ATR_VacuumAlignmentFrame</ThingDef>
+			<HediffDef>ATR_VacuumAlignmentFrame</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ATR_VacuumAlignmentFrame</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ATR_VacuumAlignmentFrame</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>ATR_VacuumAlignmentFrame</addsHediff>
+	</RecipeDef>
+
+<!-- Vacuum Military Frames -->
+
+</Defs>

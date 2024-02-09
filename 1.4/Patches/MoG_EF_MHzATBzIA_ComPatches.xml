@@ -71,26 +71,11 @@
 		</nomatch>
 		<match Class="PatchOperationFindMod">
 			<mods>
-				<li>MH: Industrial Automatons - Android Tiers</li>
+				<li>MH: Industrial Automatons</li>
 			</mods>
 			<match Class="PatchOperationSequence">
 				<operations>
 					<!-- Tech tweaks for the expanded research tree. -->
-					<li Class="PatchOperationFindMod">
-						<mods>
-							<li>ATR MUFF Reforged - Android Tiers</li>
-						</mods>
-						<match Class="PatchOperationSequence">
-							<operations>
-								<!-- Tweak for MUFF Reforged Tech. -->
-								<!-- ATR_AdvancedIndustrialFrames -->
-								<li Class="PatchOperationReplace">
-									<xpath>Defs/ResearchProjectDef[defName = "ATR_AdvancedIndustrialFrames"]/prerequisites</xpath>
-									<value><prerequisites><li>ATR_AdvancedMechanicalFrameworks</li><li>ATR_IndustrialUtilityFrameworks</li><li>ATR_MultiUtilityMimetics</li></prerequisites></value></li>
-							</operations>
-						</match>
-					</li>
-					
 					<!-- Move new frames to correct unlock projects. -->
 					<!-- ATR_AlignmentFrame -->
 					<li Class="PatchOperationAdd">

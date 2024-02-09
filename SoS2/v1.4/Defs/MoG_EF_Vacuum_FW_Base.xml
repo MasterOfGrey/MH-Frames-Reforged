@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- VacuumFramework Bases -->
+	<HediffDef Name="ATR_AddedVacuumFrameworkBase"  ParentName="ATR_AddedBodyPartFrameworkBase" Abstract="True">
+		<!-- Values added by patch. -->
+		<!-- <stages>
+			<li>
+				<statOffsets>
+					<HypoxiaResistance>1</HypoxiaResistance>
+					<DecompressionResistance>1</DecompressionResistance>
+					<ArmorRating_Heat>0.4</ArmorRating_Heat>
+					<ComfyTemperatureMin>-30</ComfyTemperatureMin>
+					<ComfyTemperatureMax>30</ComfyTemperatureMax>
+				</statOffsets>
+			</li>
+		</stages> -->
+	</HediffDef>
+	
+	<ThingDef Name="ATR_VacuumFrameworkBase" ParentName="ATR_BodyPartFrameworkBase" Abstract="True">
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Things/FrameworkVacuum</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>32000</WorkToMake>
+		</statBases>
+		<costList>
+			<MiniComponentVacuum>8</MiniComponentVacuum>
+			<ATR_MechAntifreeze>20</ATR_MechAntifreeze>
+			<Luciferium>2</Luciferium>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>16</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>ATR_VacuumFrameworks</researchPrerequisite>
+		</recipeMaker>
+		<thingSetMakerTags><li>RewardStandardHighFreq</li></thingSetMakerTags>
+		<tradeTags>
+			<li>TechHediff</li>
+		</tradeTags>
+	</ThingDef>
+
+	<RecipeDef Name="ATR_SurgeryVacuumFramework" ParentName="ATR_SurgeryFramework" Abstract="True">
+		<jobString>Installing vacuum-safe framework.</jobString>
+		<appliedOnFixedBodyParts>
+			<li>ATR_Framework</li>
+		</appliedOnFixedBodyParts>
+		<anesthetize>false</anesthetize>
+	</RecipeDef>
+
+</Defs>

@@ -6,8 +6,8 @@
 		<LangVersion>latest</LangVersion>
 
 		<!-- Modify [RootNamespace], [AssemblyName], [OutputPath], [VersionPrefix] -->
-		<RootNamespace>ATR_Extra_Frames</RootNamespace>
-		<AssemblyName>ATR_Extra_Frames</AssemblyName>
+		<RootNamespace>MH_Frames_Reforged</RootNamespace>
+		<AssemblyName>MH_Extra_Frames</AssemblyName>
 		<OutputPath>../../../1.4/Assemblies</OutputPath>
 		<VersionPrefix>0.1.0.0</VersionPrefix>
 

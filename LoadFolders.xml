@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<loadFolders>	
+	<v1.4>	
+		<!-- base -->
+		<li>/</li>
+		<li>1.4</li>
+		<li>Common</li>
+		<!-- SoS2 -->
+		<li IfModActive="kentington.saveourship2">SoS2/v1.4</li>
+		<!-- Apply in All Versions -->
+		<li IfModActive="kentington.saveourship2">SoS2/Common</li>
+	</v1.4>
+</loadFolders>
