@@ -22,4 +22,9 @@
 		<value><ComfyTemperatureMax>30</ComfyTemperatureMax></value>
 	</Operation>
 
+	<!-- Patch on Self: Correction for multithermal -->
+	<Operation Class="PatchOperationReplace">
+	<xpath>Defs/HediffDef[defName="ATR_MultithermalVacuumFrame"]/stages/li/statOffsets/ArmorRating_Heat</xpath>
+		<value><ArmorRating_Heat>1.9</ArmorRating_Heat></value>
+	</Operation>
 </Patch>

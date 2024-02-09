@@ -3,7 +3,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>MiniComponentVacuum</defName>
 		<label>Miniature vacuum-pump component</label>
-		<description>Mini-Advanced computing and energy-directing machinery for animal prosthetic.</description>
+		<description>Mini-Advanced computing, pumping, and energy-directing machinery for vacuum frameworks.</description>
 		<descriptionHyperlinks><RecipeDef>Make_MiniComponentVacuum</RecipeDef></descriptionHyperlinks>
 		<graphicData>
 			<texPath>Things/Item/Resource/ComponentSpacer</texPath>

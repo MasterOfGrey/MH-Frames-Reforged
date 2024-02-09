@@ -155,7 +155,7 @@
 		<label>Advanced Alignment Frame</label>
 		<description>An upgrade to the alignment chassis framework, this frame aligns the components associated with the primary motor function elements of a creature and includes regenerative braking inverters to assist with battery longevity. The regenerative bonuses to battery life make it advantageous for any mechanical involved in significant travel.</description>
 		<statBases>
-			<MarketValue>900</MarketValue>
+			<MarketValue>2000</MarketValue>
 		</statBases>
 		<costList>
 			<Steel>40</Steel>

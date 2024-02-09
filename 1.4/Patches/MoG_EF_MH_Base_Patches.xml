@@ -35,9 +35,9 @@
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName = "ATR_MobilityFrame"]</xpath>
 					<value><recipeMaker><researchPrerequisite>ATR_MechanicalFrameworks</researchPrerequisite></recipeMaker></value></li>
-				<li Class="PatchOperationAdd">
+				<!-- <li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName = "ATR_SanitaryFrame"]</xpath>
-					<value><recipeMaker><researchPrerequisite>ATR_MechanicalFrameworks</researchPrerequisite></recipeMaker></value></li>
+					<value><recipeMaker><researchPrerequisite>ATR_MechanicalFrameworks</researchPrerequisite></recipeMaker></value></li> -->
 			</operations>
 		</match>
 	</Operation>

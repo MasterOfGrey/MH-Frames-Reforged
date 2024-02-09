@@ -4,7 +4,7 @@
     <description>[img]https://i.imgur.com/7xuCZqW.png[/img]
 [h1]Submod for Mechanical Humanlikes: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2974536022]Android Tiers Core[/url][/h1]
 Designed for Rimworld 1.4
-Mod Version V1.0
+Mod Version V1.1
 Please consider rating this if you like it! It really helps out. [img]https://i.imgur.com/tE28cZ7.gif[/img]
 
 [table]
@@ -27,14 +27,32 @@ Also includes code to ensure that the carrying capacity improvements from framew
 - Mobility (fixed movement speed bonus, again due to actual actuator functioning)
 
 [b]Added Frames:[/b]
-- Alignment Frame (hauling frame ideal for trainable mechanical animals)
-- Thermal Pumped Frame (combat oriented upgrade to the Guardian Frame)
-- Martial Frame (combat durability enhanced upgrade to the Mobility Frame)
-- Advanced Alignment Frame (improved from above but spacer tech and much more expensive)
-- Advanced Hydraulic Frame (as above; same scope of improvements and tech/cost changes)
-- Noble Frame (more refined version of the Refined Frame with a focus on enhancing Nobility)
+- Standard:
+ - Noble Frame (more refined version of the Refined Frame with a focus on enhancing Nobility)
+- Industrial:
+ - Alignment Frame (hauling frame ideal for trainable mechanical animals)
+ - Advanced Alignment Frame (improved from above but spacer tech and much more expensive)
+ - Advanced Hydraulic Frame (as above; same scope of improvements and tech/cost changes)
+- Military:
+ - Thermal Pumped Frame (combat oriented upgrade to the Guardian Frame)
+ - Martial Frame (combat durability enhanced upgrade to the Mobility Frame)
+ - Multithermal Composite Frame (advanced hybrid of the Composite and Guardian Frames)
+ - Martial Composite Frame (advanced hybrid of the Composite and Mobility Frames)
+ - "Valiant" Multicomposite Frame (direct and expensive upgrade to the Composite Frame)
 
 I am happy to add other unique frames if people want them.
+
+[b]NEW FEATURE - SOS2 COMPATIBILITY:[/b]
+- Vacuum-safe frame upgrades of advanced frames:
+ - Noble Vacuum Frame
+ - Sanitary Vacuum Frame
+ - Alignment Vacuum Frame
+ - Hydraulic Vacuum Frame
+ - Multithermal Vacuum Frame
+ - Martial Vacuum Frame
+ - "Valiant" Vacuum Frame
+
+ ALL Vacuum frames come with a range of additional stat effects for being vacuum-proof.
 
 [img]https://i.imgur.com/Qp8JBtZ.png[/img]
 [h1]Recommended:[/h1]
