@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThoughtDef>
+		<defName>ATR_VacuumOverheat</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>joywire</label>
+				<description>It feels amazing.</description>
+				<baseMoodEffect>30</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

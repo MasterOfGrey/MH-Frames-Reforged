@@ -14,6 +14,11 @@
 				</statOffsets>
 			</li>
 		</stages> -->
+		<modExtensions>
+			<li Class="MH_Frames_Reforged.FR_VacuumExtension">
+				<isVacuumFrame>true</isVacuumFrame>
+			</li>
+		</modExtensions>
 	</HediffDef>
 	
 	<ThingDef Name="ATR_VacuumFrameworkBase" ParentName="ATR_BodyPartFrameworkBase" Abstract="True">
