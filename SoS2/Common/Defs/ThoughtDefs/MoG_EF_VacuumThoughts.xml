@@ -2,14 +2,35 @@
 <Defs>
 
 	<ThoughtDef>
-		<defName>ATR_VacuumOverheat</defName>
-		<workerClass>ThoughtWorker_Hediff</workerClass>
-		<validWhileDespawned>true</validWhileDespawned>
+		<defName>ATR_VacuumApparelOverheat</defName>
+		<workerClass>MH_Frames_Reforged.ThoughtWorker_VacuumOverheat</workerClass> <!-- Your custom ThoughtWorker class -->
+		<label>Flammable Apparel</label>
+		<description>Clothing is not heat-tolerant enough</description>
 		<stages>
 			<li>
-				<label>joywire</label>
-				<description>It feels amazing.</description>
-				<baseMoodEffect>30</baseMoodEffect>
+				<label>Flammable Apparel x1</label>
+				<description>An item of clothing is not heat-tolerant enough. Every movement is careful to avoid ruining it.</description>
+				<baseMoodEffect>-20</baseMoodEffect>
+			</li>
+			<li>
+				<label>Flammable Apparel x2</label>
+				<description>Two items of clothing are not heat-tolerant enough. It is very uncomfortable to work around them.</description>
+				<baseMoodEffect>-40</baseMoodEffect>
+			</li>
+			<li>
+				<label>Flammable Apparel x3</label>
+				<description>Three items of clothing are not heat-tolerant enough. I would be better off naked.</description>
+				<baseMoodEffect>-60</baseMoodEffect>
+			</li>
+			<li>
+				<label>Flammable Apparel x4</label>
+				<description>Four items of clothing are not heat-tolerant enough. My every action is restricted.</description>
+				<baseMoodEffect>-80</baseMoodEffect>
+			</li>
+			<li>
+				<label>Flammable Apparel x5</label>
+				<description>So much of my clothing is not heat-tolerant enough that I cannot consider it justified unless it were life-or-death.</description>
+				<baseMoodEffect>-100</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>
