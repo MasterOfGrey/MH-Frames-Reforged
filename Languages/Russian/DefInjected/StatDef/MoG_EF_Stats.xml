@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <EF_CaravanCapacity.label>грузоподъёмность каркаса</EF_CaravanCapacity.label>
+  <EF_CaravanCapacity.description>Дополнительная масса, которую этот юнит может нести при любых обстоятельствах, благодаря усилению каркаса.</EF_CaravanCapacity.description>
+
+
+</LanguageData>

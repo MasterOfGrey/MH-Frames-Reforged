@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Noble Vacuum -->
+
+  <ATR_Install_VacuumNobleFrame.label>Установить Благородный Вакуумный Каркас</ATR_Install_VacuumNobleFrame.label>
+  <ATR_Install_VacuumNobleFrame.description>Заменить каркас этого юнита на благородный вакуусный каркас, подчёркивающий красоту и придающий несравненную царственность. Установка каркаса зависит как от комплектующих, так и от навыка искусства установщика, ведь стандартизировать красоту, замысловатой конструкции, невозможно.</ATR_Install_VacuumNobleFrame.description>
+  <ATR_Install_VacuumNobleFrame.jobString>Установка вакуумного безопасного каркаса</ATR_Install_VacuumNobleFrame.jobString>
+
+
+  <!-- Sanitary -->
+
+  <ATR_Install_VacuumSanitaryFrame.label>Установить Стерильный Вакуумный Каркас</ATR_Install_VacuumSanitaryFrame.label>
+  <ATR_Install_VacuumSanitaryFrame.description>Заменить каркас юнита на стерильный вакуусный каркас, обеспечивая полное отсутствие грязи и полную санитарную обработку.</ATR_Install_VacuumSanitaryFrame.description>
+  <ATR_Install_VacuumSanitaryFrame.jobString>Установка вакуумного безопасного каркаса</ATR_Install_VacuumSanitaryFrame.jobString>
+
+
+  <!-- Hydraulic Vacuum -->
+
+  <ATR_Install_VacuumHydraulicFrame.label>Установить Гидравлический Вакуумный Каркас</ATR_Install_VacuumHydraulicFrame.label>
+  <ATR_Install_VacuumHydraulicFrame.description>Заменить каркас этого юнита на гидравлический вакуумный каркас, что значительно повысит грузоподъёмность, общую эффективность работы и уменьшит расход батареи.</ATR_Install_VacuumHydraulicFrame.description>
+  <ATR_Install_VacuumHydraulicFrame.jobString>Установка вакуумного безопасного каркаса</ATR_Install_VacuumHydraulicFrame.jobString>
+
+
+  <!-- Alignment Vacuum -->
+
+  <ATR_Install_VacuumAlignmentFrame.label>Установить Грузовой Вакуумный Каркас</ATR_Install_VacuumAlignmentFrame.label>
+  <ATR_Install_VacuumAlignmentFrame.description>Заменить каркас этого юнита на грузовой вакуумный каркас, что значительно повысит полезность в качестве средства для транспортировки грузов и уменьшит расход батареи.</ATR_Install_VacuumAlignmentFrame.description>
+  <ATR_Install_VacuumAlignmentFrame.jobString>Установка вакуумного безопасного каркаса</ATR_Install_VacuumAlignmentFrame.jobString>
+
+
+  <!-- Multithermal Vacuum -->
+
+  <ATR_Install_MultithermalVacuumFrame.label>Установить Многослойный Вакуумный Каркас</ATR_Install_MultithermalVacuumFrame.label>
+  <ATR_Install_MultithermalVacuumFrame.description>Заменить каркас этого юнита на термозащитный вакуумный каркас с тепловым насосом, повышающим боеспособность при экстремальных температурах.</ATR_Install_MultithermalVacuumFrame.description>
+  <ATR_Install_MultithermalVacuumFrame.jobString>Установка вакуумного безопасного каркаса</ATR_Install_MultithermalVacuumFrame.jobString>
+
+
+  <!-- Martial Vacuum -->
+
+  <ATR_Install_MartialVacuumFrame.label>Установить Боевой Вакуумный Каркас</ATR_Install_MartialVacuumFrame.label>
+  <ATR_Install_MartialVacuumFrame.description>Заменить каркас этого юнита на боевой вакуумный каркас, улучшающий подвижность, повышающий возможности в ближнем бою и выживаемость.</ATR_Install_MartialVacuumFrame.description>
+  <ATR_Install_MartialVacuumFrame.jobString>Установка вакуумного безопасного каркаса</ATR_Install_MartialVacuumFrame.jobString>
+
+
+  <!-- Valiant Vacuum Plating -->
+
+  <ATR_Install_ValiantVacuumPlating.label>Установить Доблестный Вакуумный Каркас</ATR_Install_ValiantVacuumPlating.label>
+  <ATR_Install_ValiantVacuumPlating.description>Заменить каркас этого юнита на доблестный вакуумный каркас, значительно повышающий боевую живучесть.</ATR_Install_ValiantVacuumPlating.description>
+  <ATR_Install_ValiantVacuumPlating.jobString>Установка вакуумного безопасного каркаса</ATR_Install_ValiantVacuumPlating.jobString>
+
+
+</LanguageData>

@@ -3,8 +3,32 @@
 
   <!-- Thermal Pumped Frame -->
 
-  <ATR_ThermalPumpedFrame.label>Термозащитный каркас</ATR_ThermalPumpedFrame.label>
-  <ATR_ThermalPumpedFrame.description>Каркас рамы из пластали с боевым уклоном, разработанный в качестве чисто военной модернизации для Защитного каркаса. Механитовый антифриз, созданный с помощью люциферия, непрерывно циркулирует по микроканалам, обеспечивая превосходную тепловую защиту в боевых условиях.</ATR_ThermalPumpedFrame.description>
+  <ATR_ThermalPumpedFrame.label>Термозащитный Каркас</ATR_ThermalPumpedFrame.label>
+  <ATR_ThermalPumpedFrame.description>Каркас шасси из пластали с боевым уклоном, разработанный в качестве чисто военного обновления для Защитного каркаса. Механитовый антифриз, созданный с помощью люциферия, непрерывно циркулирует по микроканалам, обеспечивая превосходную тепловую защиту в боевых условиях.</ATR_ThermalPumpedFrame.description>
+
+
+  <!-- Martial Frame -->
+
+  <ATR_MartialFrame.label>Боевой Каркас</ATR_MartialFrame.label>
+  <ATR_MartialFrame.description>Каркас шасси из пластали с боевым уклоном, разработанный в качестве чисто военного обновления для Подвижного каркаса. По всем боевым параметрам он сильно превосходит каркас для боевых целей. Однако для достижения тех же показателей с дополнительной защитой, требуется тонкое извращение формы, которое придаёт носителю жутковатый вид.</ATR_MartialFrame.description>
+
+
+  <!-- Multithermal Composite -->
+
+  <ATR_MultithermalCompositeFrame.label>Многослойный Композитный Каркас</ATR_MultithermalCompositeFrame.label>
+  <ATR_MultithermalCompositeFrame.description>Улучшенный композитный каркас, разработанный как военно-утилитарный гибрид композитного и защитного каркасов, без ущерба качества. Механитовый антифриз, созданный с помощью люциферия, непрерывно циркулирует по микроканалам, обеспечивая превосходную тепловую защиту в боевых условиях.</ATR_MultithermalCompositeFrame.description>
+
+
+  <!-- Martial Composite -->
+
+  <ATR_MartialCompositeFrame.label>Боевой Композитный Каркас</ATR_MartialCompositeFrame.label>
+  <ATR_MartialCompositeFrame.description>Улучшенный композитный каркас, предназначенный для использования в качестве гибрида композитного и мобильного каркаса. По всем боевым параметрам он сильно превосходит каркас для боевых целей. Повышение качества изготовления уменьшило, но не устранило тонкое извращение формы базового боевого каркаса, придающее его носителю жутковатый вид.</ATR_MartialCompositeFrame.description>
+
+
+  <!-- Valiant Multicomposite Plating -->
+
+  <ATR_ValiantMulticompositePlating.label>Доблестный Многокомпозитный Каркас</ATR_ValiantMulticompositePlating.label>
+  <ATR_ValiantMulticompositePlating.description>Улучшенный многокомпозитный каркас, разработанн как улучшение композитного каркаса. Каркас часто называют «Доблесть», это самый прочный каркас, который можно использовать в боевых целях. В дополнение к усиленному многокомпозитному каркасу из пластали, механиты обеспечивают усиленную реактивную броню, почти мгновенного действия.</ATR_ValiantMulticompositePlating.description>
 
 
 </LanguageData>

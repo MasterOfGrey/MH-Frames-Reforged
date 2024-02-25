@@ -3,8 +3,32 @@
 
   <!-- Thermal Pumped Frame -->
 
-  <ATR_Install_ThermalPumpedFrame.label>Установить термозащитный каркас</ATR_Install_ThermalPumpedFrame.label>
-  <ATR_Install_ThermalPumpedFrame.description>Замена каркаса этого агрегата на термозащитный каркас с тепловым насосом, повышающим боеспособность при экстремальных температурах.</ATR_Install_ThermalPumpedFrame.description>
+  <ATR_Install_ThermalPumpedFrame.label>Установить Термозащитный Каркас</ATR_Install_ThermalPumpedFrame.label>
+  <ATR_Install_ThermalPumpedFrame.description>Заменить каркас этого юнита на термозащитный каркас с тепловым насосом, повышающим боеспособность при экстремальных температурах.</ATR_Install_ThermalPumpedFrame.description>
+
+
+  <!-- Martial Frame -->
+
+  <ATR_Install_MartialFrame.label>Установить Боевой Каркас</ATR_Install_MartialFrame.label>
+  <ATR_Install_MartialFrame.description>Заменить каркас этого юнита на боевой каркас, улучшающий подвижность, и вкраплениями закаленной пластали, что повышает возможности в ближнем бою и выживаемость.</ATR_Install_MartialFrame.description>
+
+
+  <!-- Multithermal Composite -->
+
+  <ATR_Install_MultithermalCompositeFrame.label>Установить Многослойный Композитный Каркас</ATR_Install_MultithermalCompositeFrame.label>
+  <ATR_Install_MultithermalCompositeFrame.description>Заменить каркас этого юнита на Многослойный Композитный Каркас, с механитной циркуляцией, что повышает боеспособность в условиях экстремальных температур.</ATR_Install_MultithermalCompositeFrame.description>
+
+
+  <!-- Martial Composite -->
+
+  <ATR_Install_MartialCompositeFrame.label>Установить Боевой Композитный Каркас</ATR_Install_MartialCompositeFrame.label>
+  <ATR_Install_MartialCompositeFrame.description>Заменить каркас этого юнита на боевой композитный каркас, улучшающий подвижность, повышающий возможности в ближнем бою и выживаемость.</ATR_Install_MartialCompositeFrame.description>
+
+
+  <!-- Valiant Multicomposite Plating -->
+
+  <ATR_Install_ValiantMulticompositePlating.label>Установить Доблестный Многокомпозитный Каркас</ATR_Install_ValiantMulticompositePlating.label>
+  <ATR_Install_ValiantMulticompositePlating.description>Заменить каркас этого юнита на доблестный многокомпозитный каркас, значительно повышающий боевую живучесть.</ATR_Install_ValiantMulticompositePlating.description>
 
 
 </LanguageData>
